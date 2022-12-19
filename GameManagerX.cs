@@ -70,14 +70,14 @@ public class GameManagerX : MonoBehaviour
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
-        scoreText.text = "score :" + score;
+        scoreText.text = "score :";
     }
 
     // Stop game, bring up game over text and restart button
     public void GameOver()
     {
         gameOverText.gameObject.SetActive(true);
-        restartButton.gameObject.SetActive(true);
+        restartButton.gameObject.SetActive(false);
         isGameActive = false;
     }
 
